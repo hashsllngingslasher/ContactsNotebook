@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_contacts">
+
+    <fragment
+        android:id="@+id/navigation_contacts"
+        android:name="com.example.contactsbook.ui.home.HomeFragment"
+        android:label="@string/title_contacts"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.contactsbook.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_create"
+        android:name="com.example.contactsbook.ui.create.CreateContactFragment"
+        android:label="@string/title_create"
+        tools:layout="@layout/fragment_create_contact">
+
+    </fragment>
+</navigation>
